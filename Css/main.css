@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif
+
+}
+
+
+
+.container {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(117, 189, 197);
+
+}
+
+.container h1{
+    padding-bottom: 15px;
+}
+.spcolor {
+    
+
+}
+.btn {
+    width: 250px;
+    font-size: 15px;
+    padding: 15px;
+    background-color: rgb(66, 108, 133);
+    color: aliceblue;
+    border-radius: 10px;
+    border: 2px solid rgb(66, 108, 133);
+    
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: rgb(142, 184, 190);
+    transition: 0.4s ease-in;
+    border: 2px solid;
+    color: rgb(57, 20, 20);
+}
+
+.btn:active{
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 2px;
+    transition: 0.25s;
+}
+
+
+
+
