@@ -74,6 +74,19 @@
 
 }
 
+.input-text {
+	font-size: 18px;
+	padding: 10px 15px;
+	margin-bottom: 5px;
+}
+
+/* Список дел */
+
+.simple-todo {
+	margin-top: 40px;
+}
+
+
 
 .text-bloc {
 

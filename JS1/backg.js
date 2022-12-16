@@ -18,17 +18,39 @@ const inputText = document.querySelector("#input");
 const textBlock = document.querySelector("#text-block");
 const btn = document.querySelector("#btn")
 
-inputText.addEventListener("input", () => {
-        console.log(inputText.value);
-        textBlock.innerText = inputText.value;
-    }
-);
+
+
+
+const todolist = document.querySelector("#todo-list");
+const todoform = document.querySelector("#todo-form");
+const todoinput = document.querySelector("#todo-input");
+
+
+
+todoform.addEventListener('submit', formHandler);
+
+function formHandler(event){
+
+    event.preventDefault();
+
+    const tasktext = todoinput.value;
+
+    const li = `<li>${tasktext}</li>`
+
+    todolist.insertAdjacentHTML('beforeend', li);
+
+    todoinput.value = '';
+
+    todoinput.focus();
+
+
+}
 
 
 
 
 
-
+// if (btn.addEventListener("click")){}
 
 
 
