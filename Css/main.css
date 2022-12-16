@@ -54,5 +54,28 @@
 }
 
 
+.back-text {
+    padding-top: 25px;
 
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.input {
+    height: 23px;
+    width: 250px;
+    margin-bottom: 22px;
+    outline: none;
+    border: none;
+    border: solid 2px #7d6060;
+
+    border-radius: 3px;
+
+}
+
+
+.text-bloc {
+
+}
 
