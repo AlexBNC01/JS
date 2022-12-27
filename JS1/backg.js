@@ -60,3 +60,92 @@ function deletetask() {
     this.closest('li').remove();
 
 }
+
+
+
+// -------------   ТАЙМЕР Лист ----------------------
+
+
+// const timer = setInterval(function(){
+//     console.log('Fired');
+// }, 1000);
+
+// clearInterval(timerintevalID);
+
+
+// const time = setInterval(function(){
+//     console.log('SF');
+// },1000)
+
+// setTimeout(function(){
+//     clearInterval(time);
+// }, 12001)
+
+
+
+// -------------   Секундомер ----------------------
+
+
+const counterEL = document.querySelector('#counter');
+let counter = 0;
+let timerID;
+
+
+// setInterval(function(){
+//     counter = counter + 1;
+
+//     counterEL.innerText = counter;
+// },1000)
+
+// Start
+
+
+const btnstart = document.querySelector('#start');
+
+btnstart.onclick = function() {
+    timerID = setInterval (function(){
+        counter = counter + 1;
+        
+        counterEL.innerText = counter;
+    }, 1000)
+
+}
+
+//Stop
+
+const btnstop = document.querySelector('#stop');
+btnstop.onclick = function (){
+    clearInterval(timerID);
+
+}
+
+
+
+
+
+
+//Slider
+
+
+let offset = 0;
+const sliderline = document.querySelector('.slider-line');
+document.querySelector('.slider-next').addEventListener('click' , function(){
+    offset = offset+256;
+    if (offset>1356){
+        offset = 0;
+    }
+    sliderline.style.left = -offset + 'px';
+
+});
+
+document.querySelector('.slider-prev').addEventListener('click' , function(){
+    offset = offset-256;
+    if (offset<0){
+        offset = 1356;
+    }
+    sliderline.style.left = -offset + 'px';
+
+});
+
+
+

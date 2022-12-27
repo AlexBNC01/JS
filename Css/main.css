@@ -2,9 +2,16 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Times New Roman', Times, serif
-
+    
 }
 
+body {
+
+    overflow-x: hidden;
+    
+    }
+    
+     
 
 
 .container {
@@ -15,12 +22,63 @@
     align-items: center;
     flex-direction: column;
     background-color: transparent;
+}
+
+.container1{
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: bisque;
+    padding: 30px;
 
 }
+
+.slider{
+    width: 756px;
+    height: 265px;
+   
+    margin: 30px auto;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.slider-line{
+    width: 1024px;
+    height: 256px;
+    margin: 30px auto; 
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+    
+}
+
+.img{
+    margin: 5px;
+    
+}
+
 
 .container h1{
     padding-bottom: 15px;
 }
+
+
+.slider-prev {
+    margin-left: 300px;
+
+}
+
+.slider-next{
+
+}
+
+.btn1{
+    
+
+
+}
+
 .spcolor {
     
 
@@ -90,5 +148,30 @@
 
 .text-bloc {
 
+}
+
+.dom-example {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+.counter {
+    margin-left: 52px;
+}
+
+.button{
+    
+    
+}
+
+#start{
+    margin: 5px;
+}
+
+#stop{
+    margin: 5px;
+}
+#reset{
+    margin: 5px;
 }
 
